@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Fee Structure | College Portal{% endblock %}
+
+{% block content %}
+<h2 class="mb-3">Annual Fee Structure</h2>
+<p class="text-muted">Fees applicable for the current academic session.</p>
+
+<div class="table-responsive shadow-sm rounded">
+    <table class="table table-bordered table-striped align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th>Program</th>
+                <th>Year / Semester</th>
+                <th>Tuition Fee</th>
+                <th>Lab / Exam Fee</th>
+                <th>Total Fee</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>B.Sc. Computer Science</td>
+                <td>FY (Sem I & II)</td>
+                <td>₹25,000</td>
+                <td>₹5,000</td>
+                <td><strong>₹30,000</strong></td>
+            </tr>
+            <tr>
+                <td>B.Sc. Computer Science</td>
+                <td>SY (Sem III & IV)</td>
+                <td>₹27,000</td>
+                <td>₹5,000</td>
+                <td><strong>₹32,000</strong></td>
+            </tr>
+            <tr>
+                <td>B.Com Accounting</td>
+                <td>FY (Sem I & II)</td>
+                <td>₹18,000</td>
+                <td>₹3,000</td>
+                <td><strong>₹21,000</strong></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}

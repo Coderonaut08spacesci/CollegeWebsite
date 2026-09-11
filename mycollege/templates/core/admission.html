@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Admissions | College Portal{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <h2>Admission Process</h2>
+        <p class="lead">Follow these simple steps to enroll in your desired academic program.</p>
+        
+        <ol class="list-group list-group-numbered mb-4">
+            <li class="list-group-item">Check eligibility criteria for the chosen course.</li>
+            <li class="list-group-item">Fill out the online application form.</li>
+            <li class="list-group-item">Upload required documents (10th/12th Marksheet, Leaving Certificate).</li>
+            <li class="list-group-item">Pay the initial prospectus and processing fee online or at campus.</li>
+        </ol>
+
+        <h4>Required Documents</h4>
+        <ul>
+            <li>Class 10th and 12th original & photocopied marksheets</li>
+            <li>School / College Leaving Certificate</li>
+            <li>Passport size photographs (3 copies)</li>
+            <li>Category Certificate (if applicable)</li>
+        </ul>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card border-primary mb-3 shadow-sm">
+            <div class="card-header bg-primary text-white">Help Desk</div>
+            <div class="card-body">
+                <h5 class="card-title">Admission Support</h5>
+                <p class="card-text">Have questions regarding eligibility or documents?</p>
+                <p class="mb-1"><strong>Phone:</strong> +91 98765 43210</p>
+                <p class="mb-3"><strong>Email:</strong> admissions@college.edu</p>
+                <a href="{% url 'contact' %}" class="btn btn-outline-primary btn-sm w-100">Contact Us Directly</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

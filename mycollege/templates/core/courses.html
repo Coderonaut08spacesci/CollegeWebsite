@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}Courses Offered | College Portal{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Offered Academic Programs</h2>
+
+<div class="row">
+    <!-- Course 1 -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="my-0">B.Sc. Computer Science</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Duration:</strong> 3 Years</p>
+                <p>Focuses on software engineering, database management, web development, and algorithms.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+                <a href="{% url 'syllabus' %}" class="btn btn-outline-primary btn-sm">View Syllabus</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course 2 -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-header bg-success text-white">
+                <h5 class="my-0">B.Com. Accounting & Finance</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Duration:</strong> 3 Years</p>
+                <p>Covers financial auditing, taxation, corporate accounting, and business laws.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+                <a href="{% url 'syllabus' %}" class="btn btn-outline-success btn-sm">View Syllabus</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course 3 -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-header bg-dark text-white">
+                <h5 class="my-0">B.A. Economics</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Duration:</strong> 3 Years</p>
+                <p>Explores micro/macroeconomics, statistics, public finance, and international trade.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+                <a href="{% url 'syllabus' %}" class="btn btn-outline-dark btn-sm">View Syllabus</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

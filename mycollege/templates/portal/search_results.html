@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Search Results{% endblock %}
+
+{% block content %}
+<h3>Search Results for: "{{ query }}"</h3>
+<hr>
+{% if results %}
+    <div class="list-group">
+    {% for notice in results %}
+        <a href="{% url 'notice-detail' notice.pk %}" class="list-group-item list-group-item-action">
+            <h5 class="mb-1">{{ notice.title }}</h5>
+            <p class="mb-1">{{ notice.content|truncatewords:25 }}</p>
+            <small class="text-muted">Category: {{ notice.category }}</small>
+        </a>
+    {% endfor %}
+    </div>
+{% else %}
+    <p>No notices found matching your query.</p>
+{% endif %}
+{% endblock %}

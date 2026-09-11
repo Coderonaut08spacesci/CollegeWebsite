@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us | College Portal{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <h2>About Our College</h2>
+        <p class="lead">Established with a vision to nurture competent professionals and responsible citizens.</p>
+        <p>Our institution provides holistic education combining rigorous academic standards with co-curricular activities. Equipped with modern laboratories, digital classrooms, and a comprehensive library, we aim to prepare students for corporate and academic success.</p>
+        
+        <h4 class="mt-4">Our Core Values</h4>
+        <ul>
+            <li>Integrity and Academic Honesty</li>
+            <li>Inclusivity and Community Building</li>
+            <li>Innovation in Learning and Teaching</li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-light border-0 p-3 shadow-sm">
+            <div class="card-body">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled mb-0">
+                    <li class="py-1"><a href="{% url 'principal-message' %}" class="text-decoration-none">Principal's Message</a></li>
+                    <li class="py-1"><a href="{% url 'courses' %}" class="text-decoration-none">Offered Courses</a></li>
+                    <li class="py-1"><a href="{% url 'fees' %}" class="text-decoration-none">Fee Structure</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Home | College Portal{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="p-5 mb-4 bg-light rounded-3 border">
+    <div class="container-fluid py-3">
+        <h1 class="display-5 fw-bold">Welcome to MyCollege Academic Portal</h1>
+        <p class="col-md-8 fs-4">Empowering students through academic excellence, modern infrastructure, and industry-focused programs.</p>
+        <a class="btn btn-primary btn-lg me-2" href="{% url 'courses' %}" role="button">Explore Courses</a>
+        <a class="btn btn-outline-secondary btn-lg" href="{% url 'admission' %}" role="button">Apply for Admission</a>
+    </div>
+</div>
+
+<!-- Quick Highlights -->
+<div class="row text-center mt-4">
+    <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm p-3">
+            <div class="card-body">
+                <h4 class="card-title text-primary">Academic Excellence</h4>
+                <p class="card-text">Wide range of undergraduate and postgraduate courses taught by experienced faculty.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm p-3">
+            <div class="card-body">
+                <h4 class="card-title text-success">Admissions Open</h4>
+                <p class="card-text">Check eligibility criteria, fee structures, and secure your seat for the upcoming academic year.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm p-3">
+            <div class="card-body">
+                <h4 class="card-title text-warning">Latest Notices</h4>
+                <p class="card-text">Stay updated with circulars, examination timetables, and department announcements.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
