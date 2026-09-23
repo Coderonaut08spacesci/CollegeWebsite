@@ -40,7 +40,7 @@ class Event(models.Model):
     description = models.TextField()
     event_date = models.DateField()
     location = models.CharField(max_length=150)
-    banner_image = models.ImageField(upload_to='events/', blank=True, null=True)
+    banner_image = models.FileField(upload_to='events/', blank=True, null=True)
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
