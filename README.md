@@ -45,8 +45,8 @@ college_website/
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/Coderonaut08spacesci/college-website-django.git](https://github.com/Coderonaut08spacesci/college-website-django.git)
-cd college-website-django/college_website
+git clone [https://github.com/Coderonaut08spacesci/CollegeWebsite.git](https://github.com/Coderonaut08spacesci/CollegeWebsite.git)
+cd CollegeWebsite
 ```
 
 ### 2. Set Up Virtual Environment *(Optional but Recommended)*
